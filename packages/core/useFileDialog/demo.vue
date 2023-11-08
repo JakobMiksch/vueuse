@@ -11,6 +11,9 @@ onChange((files) => {
   <button type="button" @click="open()">
     Choose files
   </button>
+  <button type="button" @click="open({ webkitdirectory: true })">
+    Choose directory
+  </button>
   <button type="button" :disabled="!files" @click="reset()">
     Reset
   </button>
